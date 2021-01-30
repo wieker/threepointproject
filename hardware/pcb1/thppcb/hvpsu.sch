@@ -1,0 +1,179 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Switching:TPS560200 U?
+U 1 1 6015D266
+P 3850 1850
+F 0 "U?" H 3850 2175 50  0000 C CNN
+F 1 "TPS560200" H 3850 2084 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 3900 1600 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps560200.pdf" H 3600 1500 50  0001 C CNN
+	1    3850 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6015D26C
+P 3000 1900
+F 0 "C?" H 3115 1946 50  0000 L CNN
+F 1 "C" H 3115 1855 50  0000 L CNN
+F 2 "" H 3038 1750 50  0001 C CNN
+F 3 "~" H 3000 1900 50  0001 C CNN
+	1    3000 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6015D272
+P 2350 1900
+F 0 "C?" H 2465 1946 50  0000 L CNN
+F 1 "C" H 2465 1855 50  0000 L CNN
+F 2 "" H 2388 1750 50  0001 C CNN
+F 3 "~" H 2350 1900 50  0001 C CNN
+	1    2350 1900
+	1    0    0    -1  
+$EndComp
+Text GLabel 1600 1750 0    50   Input ~ 0
+VIN
+Wire Wire Line
+	1600 1750 2350 1750
+Connection ~ 2350 1750
+Wire Wire Line
+	2350 1750 3000 1750
+Connection ~ 3000 1750
+Wire Wire Line
+	3000 1750 3550 1750
+$Comp
+L power:GND #PWR?
+U 1 1 6015D27E
+P 3850 2450
+F 0 "#PWR?" H 3850 2200 50  0001 C CNN
+F 1 "GND" H 3855 2277 50  0000 C CNN
+F 2 "" H 3850 2450 50  0001 C CNN
+F 3 "" H 3850 2450 50  0001 C CNN
+	1    3850 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 2050 2350 2300
+Wire Wire Line
+	2350 2300 3000 2300
+Wire Wire Line
+	3850 2300 3850 2450
+Wire Wire Line
+	3850 2150 3850 2300
+Connection ~ 3850 2300
+Wire Wire Line
+	3000 2050 3000 2300
+Connection ~ 3000 2300
+Wire Wire Line
+	3000 2300 3850 2300
+$Comp
+L Device:L L?
+U 1 1 6015D28C
+P 4550 1750
+F 0 "L?" V 4369 1750 50  0000 C CNN
+F 1 "L" V 4460 1750 50  0000 C CNN
+F 2 "" H 4550 1750 50  0001 C CNN
+F 3 "~" H 4550 1750 50  0001 C CNN
+	1    4550 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6015D292
+P 5200 1900
+F 0 "C?" H 5315 1946 50  0000 L CNN
+F 1 "C" H 5315 1855 50  0000 L CNN
+F 2 "" H 5238 1750 50  0001 C CNN
+F 3 "~" H 5200 1900 50  0001 C CNN
+	1    5200 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6015D298
+P 5750 1900
+F 0 "C?" H 5865 1946 50  0000 L CNN
+F 1 "C" H 5865 1855 50  0000 L CNN
+F 2 "" H 5788 1750 50  0001 C CNN
+F 3 "~" H 5750 1900 50  0001 C CNN
+	1    5750 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6015D29E
+P 6250 1900
+F 0 "R?" H 6320 1946 50  0000 L CNN
+F 1 "R" H 6320 1855 50  0000 L CNN
+F 2 "" V 6180 1900 50  0001 C CNN
+F 3 "~" H 6250 1900 50  0001 C CNN
+	1    6250 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6015D2A4
+P 6250 2400
+F 0 "R?" H 6320 2446 50  0000 L CNN
+F 1 "R" H 6320 2355 50  0000 L CNN
+F 2 "" V 6180 2400 50  0001 C CNN
+F 3 "~" H 6250 2400 50  0001 C CNN
+	1    6250 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 1750 4400 1750
+Wire Wire Line
+	4700 1750 5200 1750
+Connection ~ 5200 1750
+Wire Wire Line
+	5200 1750 5750 1750
+Connection ~ 5750 1750
+Wire Wire Line
+	5750 1750 6250 1750
+Wire Wire Line
+	6250 2050 6250 2150
+Wire Wire Line
+	3850 2300 5200 2300
+Wire Wire Line
+	5750 2300 5750 2050
+Wire Wire Line
+	5750 2300 5750 2550
+Wire Wire Line
+	5750 2550 6250 2550
+Connection ~ 5750 2300
+Wire Wire Line
+	5200 2050 5200 2300
+Connection ~ 5200 2300
+Wire Wire Line
+	5200 2300 5750 2300
+Wire Wire Line
+	4150 1950 4550 1950
+Wire Wire Line
+	4550 1950 4550 2150
+Wire Wire Line
+	4550 2150 6250 2150
+Connection ~ 6250 2150
+Wire Wire Line
+	6250 2150 6250 2250
+Text GLabel 6600 1750 2    50   Input ~ 0
+VOUT
+Wire Wire Line
+	6250 1750 6600 1750
+Connection ~ 6250 1750
+$EndSCHEMATC
